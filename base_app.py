@@ -275,10 +275,6 @@ def main():
 
 	if selection == 'Contact App Developers':
 		
-		img = Image.open("Desktop/WhatsApp Image 2022-06-29 at 6.05.11 PM.jpeg")
-		# display image using streamlit
-		# width is used to set the width of an image
-		st.image(img, width=200)
 		st.info('Contact details in case you any query or would like to know more of our designs:')
 		st.write('Keara: kbarnard625@gmail.com')
 		st.write('Ronewa: Mutobvuronewa@gmail.com')
@@ -286,6 +282,11 @@ def main():
 		st.write('Cecilia: Cecilianunguiane@gmail.com')
 		st.write('Ayanda: ayanda7397@gmail.com')
 		st.write('Siya: Siya.xola94@gmail.com')
+
+		img = Image.open("Desktop/WhatsApp Image 2022-06-29 at 6.05.11 PM.jpeg")
+		# display image using streamlit
+		# width is used to set the width of an image
+		st.image(img, width=1000)
 ## Looking at the main words used throughout these tweets, we can see that there are many conflicting beliefs.
 ## Some belief that climate change is:
 ## * man-made
