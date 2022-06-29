@@ -29,7 +29,7 @@ import joblib, os
 from PIL import Image
 import json
 import requests
-from streamlit_lottie import st_lottie
+
 
 ## data dependencies
 import pandas as pd
@@ -55,21 +55,6 @@ from wordcloud import WordCloud
 import warnings
 warnings.filterwarnings('ignore')
 
-
-# Vectorizer
-news_vectorizer = open("resources/TfidfVectorizer.pkl","rb")
-tweet_cv = joblib.load(news_vectorizer) # loading your vectorizer from the pkl file
-
-def load_lottiefile(filepath: str):
-    with open(filepath, "r") as f:
-        return json.load(f)
-
-
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
 # Load your raw data
 raw = pd.read_csv("resources/train.csv")
 
@@ -80,7 +65,6 @@ def main():
 	# these are static across all pages
 	st.title("Sentiment Classifier")
 	st.header("Climate change tweet classification")
-	lottie_coding = load_lottiefile("twitter.json")
 	
 	# Creating sidebar with selection box -
 	# you can create multiple pages this way
