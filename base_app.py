@@ -70,7 +70,7 @@ def main():
 	# Creating sidebar with selection box -
 	# you can create multiple pages this way
 	options = ["Tweet Classifier", "Information", "Analysis and Visuals", 'Contact App Developers']
-	selection = st.sidebar.selectbox("Navigater", options)
+	selection = st.sidebar.selectbox("Navigator", options)
 
 	# Building out the "Information" page
 	if selection == "Information":
