@@ -275,7 +275,7 @@ def main():
 
 	if selection == 'Contact App Developers':
 		
-		img = Image.open("WhatsApp Image 2022-06-29 at 6.05.11 PM.jpeg")
+		img = Image.open("Desktop/WhatsApp Image 2022-06-29 at 6.05.11 PM.jpeg")
 		# display image using streamlit
 		# width is used to set the width of an image
 		st.image(img, width=200)
