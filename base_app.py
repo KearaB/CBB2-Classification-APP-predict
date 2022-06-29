@@ -73,7 +73,7 @@ def main():
 	# you can create multiple pages this way
 	options = ["Tweet Classifier", "Information", "Analysis and Visuals", 'Contact App Developers']
 	selection = st.sidebar.selectbox("Navigator", options)
-	st.sidebar.image("Desktop/WhatsApp Image 2022-06-29 at 6.05.11 PM.jpeg", use_column_width=True)
+	st.sidebar.image("Screenshot (219).png", use_column_width=True)
 	# Building out the "Information" page
 	if selection == "Information":
 		st.subheader("Classification")
