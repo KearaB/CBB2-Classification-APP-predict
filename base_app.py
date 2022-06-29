@@ -27,7 +27,10 @@
 import streamlit as st
 import joblib, os
 from PIL import Image
-from annotated_textimport annotated_text
+import json
+import requests
+from streamlit_lottie import lottie
+
 ## data dependencies
 import pandas as pd
 import numpy as np
@@ -57,6 +60,16 @@ warnings.filterwarnings('ignore')
 news_vectorizer = open("resources/TfidfVectorizer.pkl","rb")
 tweet_cv = joblib.load(news_vectorizer) # loading your vectorizer from the pkl file
 
+def load_lottiefile(filepath: str):
+    with open(filepath, "r") as f:
+        return json.load(f)
+
+
+def load_lottieurl(url: str):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
 # Load your raw data
 raw = pd.read_csv("resources/train.csv")
 
@@ -67,7 +80,7 @@ def main():
 	# these are static across all pages
 	st.title("Sentiment Classifier")
 	st.header("Climate change tweet classification")
-	
+	lottie_coding = load_lottiefile("twitter.json")
 	
 	# Creating sidebar with selection box -
 	# you can create multiple pages this way
@@ -109,7 +122,7 @@ def main():
 
 	# Building out the predication page
 	if selection == "Tweet Classifier":
-		st.info("Prediction with ML Models")
+		st.subheader("Prediction with ML Models")
 		
 		st.markdown('Insert a climate change related tweet and see the predicted sentiment!')
 		st.markdown('The focus of this section is to:')
@@ -276,7 +289,7 @@ def main():
 
 	if selection == 'Contact App Developers':
 		
-		st.info('Contact details in case you any query or would like to know more of our designs:')
+		st.write('Contact details in case you any query or would like to know more of our designs:')
 		st.write('Keara: kbarnard625@gmail.com')
 		st.write('Ronewa: Mutobvuronewa@gmail.com')
 		st.write('Leham: leham.greeves@gmail.com')
