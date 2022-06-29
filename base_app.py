@@ -77,20 +77,30 @@ def main():
 		st.subheader("Classification")
 		# You can read a markdown file from supporting resources folder
 		st.markdown("We, as human beings, make multiple decisions throughout the day. For example, when to wake up, what to wear, who to call, which route to take when traveling, how to sit, the list goes on and on. While several of these are repetitive and we do not usually take notice (and allow it to be done subconsciously), there are many others that are new and require conscious thought.  And we learn along the way. Businesses, similarly, apply their past learning to decision-making related to operations and new initiatives e.g. relating to customer classification, products, etc. However, it gets a little more complex here as there are multiple stakeholders involved. Additionally, the decisions need to be accurate owing to their wider impact. With the evolution in digital technology, humans have developed multiple assets; machines being one of them. We have learned (and continue) to use machines for analyzing data using statistics to generate useful insights that serve as an aid in making decisions and forecasts.")
+		
 		st.subheader("Logistic Regression")
-		st.markdown('Logistic Regression utilizes the power of regression to do classification and has been doing so exceedingly well for several decades now, to remain amongst the most popular models. One of the main reasons for the model’s success is its power of explainability i.e. calling out the contribution of individual predictors, quantitatively. Unlike regression which uses Least Squares, the model uses Maximum Likelihood to fit a sigmoid curve on the target variable distribution. Given the model’s susceptibility to multi-collinearity, applying it step-wise turns out to be a better approach in finalizing the chosen predictors of the model. The algorithm is a popular choice in many natural language processing tasks e.g. toxic speech detection, topic classification, etc...')
+		st.write("check out this [link](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html?highlight=logistic%20regression#sklearn.linear_model.LogisticRegression)")
+		
 		st.subheader('Random Forest')
-		st.markdown('A Random Forest is a reliable ensemble of multiple Decision Trees (or CARTs); though more popular for classification, than regression applications. Here, the individual trees are built via bagging (i.e. aggregation of bootstraps which are nothing but multiple train datasets created via sampling of records with replacement) and split using fewer features. The resulting diverse forest of uncorrelated trees exhibits reduced variance; therefore, is more robust towards change in data and carries its prediction accuracy to new data. However, the algorithm does not work well for datasets having a lot of outliers, something which needs addressing prior to the model building.')
+		st.write("check out this [link](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)")
+		
 		st.subheader('Naïve Bayes')
-		st.markdown('Though we may not realize it, this is the algorithm that’s most commonly used to sift through spam emails! It applies what is known as a posterior probability using Bayes Theorem to do the categorization of the unstructured data. And in doing so, it makes a naïve assumption that the predictors are independent, which may not be true. The model works well with a small training dataset, provided all the classes of the categorical predictor are present.')
-		st.subheader('KNN')
-		st.markdown('K-Nearest Neighbor (KNN) algorithm predicts based on the specified number (k) of the nearest neighboring data points. Here, the pre-processing of the data is significant as it impacts the distance measurements directly. Unlike others, the model does not have a mathematical formula, nor any descriptive ability. Here, the parameter ‘k’ needs to be chosen wisely; as a value lower than optimal leads to bias, whereas a higher value impacts prediction accuracy. It is a simple, fairly accurate model preferable mostly for smaller datasets, owing to the huge computations involved in the continuous predictors. At a simple level, KNN may be used in a bivariate predictor setting e.g. height and weight, to determine the gender, given a sample.')
+		st.write("check out this [link](https://towardsdatascience.com/naive-bayes-explained-9d2b96f4a9c0)")
+		
+		st.subheader('K-Nearest Neighbors')
+		st.write("check out this [link](https://scikit-learn.org/stable/modules/generated/sklearn.impute.KNNImputer.html?highlight=knn#sklearn.impute.KNNImputer)")
+		
 		st.subheader('Passive Aggressive Classifier')
-		st.markdown('Passive Aggressive Classifier belongs to the category of online learning algorithms in machine learning. It works by responding as passive for correct classifications and responding as aggressive for any miscalculation.')
+		st.write("check out this [link](https://thecleverprogrammer.com/2021/02/10/passive-aggressive-classifier-in-machine-learning/#:~:text=Passive%20Aggressive%20Classifier%20belongs%20to%20the%20category%20of,classifications%20and%20responding%20as%20aggressive%20for%20any%20miscalculation)")
+		#st.markdown('Passive Aggressive Classifier belongs to the category of online learning algorithms in machine learning. It works by responding as passive for correct classifications and responding as aggressive for any miscalculation.')
+		
 		st.subheader('Bernoulli Naive Bayes')
-		st.markdown('Bernoulli Naive Bayes is one of the variants of the Naive Bayes algorithm in machine learning. It is very useful to be used when the dataset is in a binary distribution where the output label is present or absent. The main advantage of this algorithm is that it only accepts features in the form of binary values. ')
+		st.write("check out this [link](https://thecleverprogrammer.com/2021/07/27/bernoulli-naive-bayes-in-machine-learning/#:~:text=Bernoulli%20Naive%20Bayes%20is%20one%20of%20the%20variants,in%20the%20form%20of%20binary%20values%20such%20as%3A)"))
+		
 		st.subheader('Stacking Classifier')
-		st.markdown('Stacking is an ensemble learning technique to combine multiple classification models via a meta-classifier. The individual classification models are trained based on the complete training set; then, the meta-classifier is fitted based on the outputs -- meta-features -- of the individual classification models in the ensemble. ')
+		st.write("check out this [link](http://rasbt.github.io/mlxtend/user_guide/classifier/StackingClassifier/#:~:text=Stacking%20is%20an%20ensemble%20learning%20technique%20to%20combine,of%20the%20individual%20classification%20models%20in%20the%20ensemble)")
+		#st.markdown('Stacking is an ensemble learning technique to combine multiple classification models via a meta-classifier. The individual classification models are trained based on the complete training set; then, the meta-classifier is fitted based on the outputs -- meta-features -- of the individual classification models in the ensemble. ')
+		
 		st.subheader("Raw Twitter data and label")
 		if st.checkbox('Show raw data'): # data is hidden if box is unchecked
 			st.write(raw[['sentiment', 'message']]) # will write the df to the page
