@@ -105,7 +105,7 @@ def main():
 		st.markdown('2. Choose one of the various models for prediction')
 		st.markdown('3. Learn if the tweet supports or opposes man-made climate change')
 		# Creating a text box for user input
-		tweet_text = st.text_area("Enter Text Here:","Type Here")
+		tweet_text = st.text_area("Enter text below:")
 		
 		if st.button("Logistic Regression Classifer"):
 			# Transforming user input with vectorizer
