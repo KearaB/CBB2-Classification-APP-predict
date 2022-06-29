@@ -286,7 +286,7 @@ def main():
 		img = Image.open("Desktop/WhatsApp Image 2022-06-29 at 6.05.11 PM.jpeg")
 		# display image using streamlit
 		# width is used to set the width of an image
-		st.image(img, width=900)
+		st.image(img, width=600)
 ## Looking at the main words used throughout these tweets, we can see that there are many conflicting beliefs.
 ## Some belief that climate change is:
 ## * man-made
