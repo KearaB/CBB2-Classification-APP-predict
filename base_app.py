@@ -274,7 +274,8 @@ def main():
 
 	if selection == 'Contact App Developers':
 		
-		
+		image = Image.open('https://github.com/KearaB/CBB2-Classification-APP-predict/blob/master/Desktop/WhatsApp%20Image%202022-06-29%20at%206.05.11%20PM.jpeg')
+		st.image(image, caption = 'This is a picture', use_column_width = True)
 		st.info('Contact details in case you any query or would like to know more of our designs:')
 		st.write('Keara: kbarnard625@gmail.com')
 		st.write('Ronewa: Mutobvuronewa@gmail.com')
