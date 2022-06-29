@@ -27,7 +27,7 @@
 import streamlit as st
 import joblib, os
 from PIL import Image
-
+from annotated_textimport annotated_text
 ## data dependencies
 import pandas as pd
 import numpy as np
@@ -73,11 +73,6 @@ def main():
 	# you can create multiple pages this way
 	options = ["Tweet Classifier", "Information", "Analysis and Visuals", 'Contact App Developers']
 	selection = st.sidebar.selectbox("Navigator", options)
-
-
-
-
-	
 	st.sidebar.image("Screenshot (219).png", use_column_width=True)
 	# Building out the "Information" page
 	if selection == "Information":
