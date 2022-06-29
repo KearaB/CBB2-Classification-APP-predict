@@ -217,22 +217,6 @@ def main():
 				result = 'Anti: the tweet does not believe in man-made climate change'		
 			st.success(result)
 
-		if st.button("Stacking Classifier"):
-			# Transforming user input with vectorizer
-			vect_text = tweet_cv.transform([tweet_text]).toarray()
-			# Load your .pkl file with the model of your choice + make predictions
-			# Try loading in multiple models to give the user a choice
-			predictor = joblib.load(open(os.path.join("resources/StackingClassifier.pkl"),"rb"))
-			prediction = predictor.predict(vect_text)
-			if prediction == 0:
-				result = 'Neutral: the tweet neither supports nor refutes the belief of man-made climate change'
-			elif prediction == 1:
-				result = 'Pro: the tweet supports the belief of man-made climate change'
-			elif prediction == 2:
-				result = 'News: the tweet links to factual news about climate change'	
-			else:
-				result = 'Anti: the tweet does not believe in man-made climate change'		
-			st.success(result)
 
 	# Building out the predication page
 	if selection == "Analysis and Visuals":
