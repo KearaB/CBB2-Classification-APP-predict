@@ -251,8 +251,8 @@ def main():
 		plt.pie(x=values, labels=labels, autopct='%1.1f%%', startangle=90, explode= (0.1, 0.1, 0.1, 0.1), colors=colors)
 		st.pyplot()
 
-		st.subheader('Wordcloud chart visual of sentiment distribution')
-		st.markdown('The word cloud is a visualisation that represents the most frequently used words in the given data')
+		st.subheader('Wordcloud visual of sentiment distribution')
+		st.markdown('The word cloud is a visualisation that represents the most frequently occuring words in the given dataset')
 		st.markdown('')
 		all_words = " ".join([sentence for sentence in raw["message"]])
 		wordcloud = WordCloud(width=800, height=500, random_state=42, max_font_size=100).generate(all_words)
