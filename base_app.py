@@ -29,7 +29,7 @@ import joblib, os
 from PIL import Image
 import json
 import requests
-from streamlit_lottie import lottie
+from streamlit_lottie import st_lottie
 
 ## data dependencies
 import pandas as pd
