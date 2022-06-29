@@ -71,7 +71,7 @@ def main():
 	# Creating sidebar with selection box -
 	# you can create multiple pages this way
 	options = ["Tweet Classifier", "Information", "Analysis and Visuals", 'Contact App Developers']
-	selection = st.sidebar.selectbox("Navigator", options)
+	selection = st.sidebar.selectbox("Navigator", options, img = Image.open("Desktop/WhatsApp Image 2022-06-29 at 6.05.11 PM.jpeg")st.image(img, width=10))
 
 	# Building out the "Information" page
 	if selection == "Information":
