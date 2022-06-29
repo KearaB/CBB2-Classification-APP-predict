@@ -68,7 +68,7 @@ def main():
 	st.title("Sentiment Classifier")
 	st.header("Climate change tweet classification")
 	
-	st.markdown(""<style>.sidebar .sidebar-content{background-image: linear-gradient(#2e7bcf,#2e7bcf); color: white;}</style>""",unsafe_allow_html=True,)
+	
 	# Creating sidebar with selection box -
 	# you can create multiple pages this way
 	options = ["Tweet Classifier", "Information", "Analysis and Visuals", 'Contact App Developers']
@@ -119,7 +119,7 @@ def main():
 		
 		# Creating a text box for user input
 		tweet_text = st.text_area("Enter text below:")
-		st.markdown('DISCALIMER: Please ensure to use Ctrl + enter, to save your text for predictions.')
+		st.markdown('DISCLAIMER: Please ensure to use Ctrl + enter, to save your text for predictions.')
 		
 		if st.button("Logistic Regression Classifer"):
 			# Transforming user input with vectorizer
