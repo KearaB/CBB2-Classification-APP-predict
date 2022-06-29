@@ -273,6 +273,8 @@ def main():
 		st.markdown('American')
 
 	if selection == 'Contact App Developers':
+		
+		
 		st.info('Contact details in case you any query or would like to know more of our designs:')
 		st.write('Keara: kbarnard625@gmail.com')
 		st.write('Ronewa: Mutobvuronewa@gmail.com')
