@@ -26,6 +26,7 @@
 
 import streamlit as st
 import joblib, os
+from PIL import Image
 
 ## data dependencies
 import pandas as pd
@@ -274,6 +275,10 @@ def main():
 
 	if selection == 'Contact App Developers':
 		
+		img = Image.open("https://github.com/KearaB/CBB2-Classification-APP-predict/blob/master/Desktop/WhatsApp%20Image%202022-06-29%20at%206.05.11%20PM.jpeg")
+		# display image using streamlit
+		# width is used to set the width of an image
+		st.image(img, width=200)
 		st.info('Contact details in case you any query or would like to know more of our designs:')
 		st.write('Keara: kbarnard625@gmail.com')
 		st.write('Ronewa: Mutobvuronewa@gmail.com')
