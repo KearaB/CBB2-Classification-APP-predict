@@ -95,7 +95,7 @@ def main():
 		#st.markdown('Passive Aggressive Classifier belongs to the category of online learning algorithms in machine learning. It works by responding as passive for correct classifications and responding as aggressive for any miscalculation.')
 		
 		st.subheader('Bernoulli Naive Bayes')
-		st.write("check out this [link](https://thecleverprogrammer.com/2021/07/27/bernoulli-naive-bayes-in-machine-learning/#:~:text=Bernoulli%20Naive%20Bayes%20is%20one%20of%20the%20variants,in%20the%20form%20of%20binary%20values%20such%20as%3A)"))
+		st.write("check out this [link](https://thecleverprogrammer.com/2021/07/27/bernoulli-naive-bayes-in-machine-learning/#:~:text=Bernoulli%20Naive%20Bayes%20is%20one%20of%20the%20variants,in%20the%20form%20of%20binary%20values%20such%20as%3A)")
 		
 		st.subheader('Stacking Classifier')
 		st.write("check out this [link](http://rasbt.github.io/mlxtend/user_guide/classifier/StackingClassifier/#:~:text=Stacking%20is%20an%20ensemble%20learning%20technique%20to%20combine,of%20the%20individual%20classification%20models%20in%20the%20ensemble)")
