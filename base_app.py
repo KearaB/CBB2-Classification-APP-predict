@@ -100,9 +100,6 @@ def main():
 		st.write("check out this [link](http://rasbt.github.io/mlxtend/user_guide/classifier/StackingClassifier/#:~:text=Stacking%20is%20an%20ensemble%20learning%20technique%20to%20combine,of%20the%20individual%20classification%20models%20in%20the%20ensemble)")
 		#st.markdown('Stacking is an ensemble learning technique to combine multiple classification models via a meta-classifier. The individual classification models are trained based on the complete training set; then, the meta-classifier is fitted based on the outputs -- meta-features -- of the individual classification models in the ensemble. ')
 		
-		st.subheader("Raw Twitter data and label")
-		if st.checkbox('Show raw data'): # data is hidden if box is unchecked
-			st.write(raw[['sentiment', 'message']]) # will write the df to the page
 
 	# Building out the predication page
 	if selection == "Tweet Classifier":
@@ -111,9 +108,14 @@ def main():
 		st.markdown('Insert a climate change related tweet and see the predicted sentiment!')
 		st.markdown('The focus of this section is to:')
 		st.markdown('1. Insert a tweet in the textbox.')
-		st.markdown('2. Choose one of the various models for prediction')
-		st.markdown('3. Learn if the tweet supports or opposes man-made climate change')
+		st.markdown('2. Choose one of the various models for prediction.')
+		st.markdown('3. *Copy a tweet by clicking the checkbox below and copying tweet into textbox.')
+		st.markdown('4. Learn if the tweet supports or opposes man-made climate chang.e')
 		
+		st.subheader('Copy Tweet!')
+		if st.checkbox('Show raw data'): # data is hidden if box is unchecked
+			st.write(raw[['message', 'sentiment']]) # will write the df to the page
+
 		# Creating a text box for user input
 		tweet_text = st.text_area("Enter text below:")
 		st.markdown('DISCLAIMER: Please ensure to use Ctrl + enter, to save your text for predictions.')
@@ -270,6 +272,9 @@ def main():
 		st.markdown('Combat')
 		st.markdown(' Fight')
 		st.markdown('American')
+
+		st.subheader("Raw Twitter data and label")
+		st.write(raw[['sentiment', 'message']]) # will write the df to the page
 
 	if selection == 'Contact App Developers':
 		
