@@ -54,7 +54,7 @@ from sklearn.metrics import plot_roc_curve
 from wordcloud import WordCloud
 import warnings
 warnings.filterwarnings('ignore')
-
+tweet_cv = joblib.load(news_vectorizer) # loading your vectorizer from the pkl file
 # Load your raw data
 raw = pd.read_csv("resources/train.csv")
 
