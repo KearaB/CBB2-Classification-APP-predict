@@ -113,8 +113,8 @@ def main():
 		st.markdown('The focus of this section is to:')
 		st.markdown('1. Insert a tweet in the textbox.')
 		st.markdown('2. Choose one of the various models for prediction.')
-		st.markdown('3. *Copy a tweet by clicking the checkbox below and copying tweet into textbox.')
-		st.markdown('4. Learn if the tweet supports or opposes man-made climate chang.e')
+		st.markdown('3. Copy a tweet by clicking the checkbox below and copying tweet into textbox.')
+		st.markdown('4. Learn if the tweet supports or opposes man-made climate change.')
 		
 		st.subheader('Copy Tweet!')
 		if st.checkbox('Show raw data'): # data is hidden if box is unchecked
@@ -284,22 +284,22 @@ def main():
 		
 		st.write('For any questions or queries, please contact one of our amazing staff:')
 		
-		st.markdown('Web designer')
+		st.subheader('Web designer')
 		st.write('Keara: kbarnard625@gmail.com')
 		
-		st.markdown('Machine Learning Engineer')
+		st.subheader('Machine Learning Engineer')
 		st.write('Ronewa: Mutobvuronewa@gmail.com')
 		
-		st.markdown('Principal Data Scientist')
+		st.subheader('Principal Data Scientist')
 		st.write('Leham: leham.greeves@gmail.com')
 		
-		st.markdown('Data Engineer')
+		st.subheader('Data Engineer')
 		st.write('Cecilia: Cecilianunguiane@gmail.com')
 		
-		st.markdown('Data Analyst')
+		st.subheader('Data Analyst')
 		st.write('Ayanda: ayanda7397@gmail.com')
 		
-		st.markdown('Data Scientist')
+		st.subheader('Data Scientist')
 		st.write('Siya: Siya.xola94@gmail.com')
 
 ## Looking at the main words used throughout these tweets, we can see that there are many conflicting beliefs.
