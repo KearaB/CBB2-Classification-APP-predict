@@ -278,12 +278,24 @@ def main():
 
 	if selection == 'Contact App Developers':
 		
-		st.write('Contact details in case you any query or would like to know more of our designs:')
+		st.write('For any questions or queries, please contact one of our amazing staff:')
+		
+		st.markdown('Web designer')
 		st.write('Keara: kbarnard625@gmail.com')
+		
+		st.markdown('Machine Learning Engineer')
 		st.write('Ronewa: Mutobvuronewa@gmail.com')
+		
+		st.markdown('Principal Data Scientist')
 		st.write('Leham: leham.greeves@gmail.com')
+		
+		st.markdown('Data Engineer')
 		st.write('Cecilia: Cecilianunguiane@gmail.com')
+		
+		st.markdown('Data Analyst')
 		st.write('Ayanda: ayanda7397@gmail.com')
+		
+		st.markdown('Data Scientist')
 		st.write('Siya: Siya.xola94@gmail.com')
 
 ## Looking at the main words used throughout these tweets, we can see that there are many conflicting beliefs.
