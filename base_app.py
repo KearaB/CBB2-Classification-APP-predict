@@ -78,26 +78,26 @@ def main():
 		st.markdown("We, as human beings, make multiple decisions throughout the day. For example, when to wake up, what to wear, who to call, which route to take when traveling, how to sit, the list goes on and on. While several of these are repetitive and we do not usually take notice (and allow it to be done subconsciously), there are many others that are new and require conscious thought.  And we learn along the way. Businesses, similarly, apply their past learning to decision-making related to operations and new initiatives e.g. relating to customer classification, products, etc. However, it gets a little more complex here as there are multiple stakeholders involved. Additionally, the decisions need to be accurate owing to their wider impact. With the evolution in digital technology, humans have developed multiple assets; machines being one of them. We have learned (and continue) to use machines for analyzing data using statistics to generate useful insights that serve as an aid in making decisions and forecasts.")
 		
 		st.subheader("Logistic Regression")
-		st.write("check out this [link](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html?highlight=logistic%20regression#sklearn.linear_model.LogisticRegression)")
+		st.write("For more info check out this [link](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html?highlight=logistic%20regression#sklearn.linear_model.LogisticRegression)")
 		
 		st.subheader('Random Forest')
-		st.write("check out this [link](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)")
+		st.write("For more info check out this [link](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)")
 		
 		st.subheader('Naïve Bayes')
-		st.write("check out this [link](https://towardsdatascience.com/naive-bayes-explained-9d2b96f4a9c0)")
+		st.write("For more info check out this [link](https://towardsdatascience.com/naive-bayes-explained-9d2b96f4a9c0)")
 		
 		st.subheader('K-Nearest Neighbors')
-		st.write("check out this [link](https://scikit-learn.org/stable/modules/generated/sklearn.impute.KNNImputer.html?highlight=knn#sklearn.impute.KNNImputer)")
+		st.write("For more info check out this [link](https://scikit-learn.org/stable/modules/generated/sklearn.impute.KNNImputer.html?highlight=knn#sklearn.impute.KNNImputer)")
 		
 		st.subheader('Passive Aggressive Classifier')
-		st.write("check out this [link](https://thecleverprogrammer.com/2021/02/10/passive-aggressive-classifier-in-machine-learning/#:~:text=Passive%20Aggressive%20Classifier%20belongs%20to%20the%20category%20of,classifications%20and%20responding%20as%20aggressive%20for%20any%20miscalculation)")
+		st.write("For more info check out this [link](https://thecleverprogrammer.com/2021/02/10/passive-aggressive-classifier-in-machine-learning/#:~:text=Passive%20Aggressive%20Classifier%20belongs%20to%20the%20category%20of,classifications%20and%20responding%20as%20aggressive%20for%20any%20miscalculation)")
 		#st.markdown('Passive Aggressive Classifier belongs to the category of online learning algorithms in machine learning. It works by responding as passive for correct classifications and responding as aggressive for any miscalculation.')
 		
 		st.subheader('Bernoulli Naive Bayes')
-		st.write("check out this [link](https://thecleverprogrammer.com/2021/07/27/bernoulli-naive-bayes-in-machine-learning/#:~:text=Bernoulli%20Naive%20Bayes%20is%20one%20of%20the%20variants,in%20the%20form%20of%20binary%20values%20such%20as%3A)")
+		st.write("For more info check out this [link](https://thecleverprogrammer.com/2021/07/27/bernoulli-naive-bayes-in-machine-learning/#:~:text=Bernoulli%20Naive%20Bayes%20is%20one%20of%20the%20variants,in%20the%20form%20of%20binary%20values%20such%20as%3A)")
 		
 		st.subheader('Stacking Classifier')
-		st.write("check out this [link](http://rasbt.github.io/mlxtend/user_guide/classifier/StackingClassifier/#:~:text=Stacking%20is%20an%20ensemble%20learning%20technique%20to%20combine,of%20the%20individual%20classification%20models%20in%20the%20ensemble)")
+		st.write("For more info check out this [link](http://rasbt.github.io/mlxtend/user_guide/classifier/StackingClassifier/#:~:text=Stacking%20is%20an%20ensemble%20learning%20technique%20to%20combine,of%20the%20individual%20classification%20models%20in%20the%20ensemble)")
 		#st.markdown('Stacking is an ensemble learning technique to combine multiple classification models via a meta-classifier. The individual classification models are trained based on the complete training set; then, the meta-classifier is fitted based on the outputs -- meta-features -- of the individual classification models in the ensemble. ')
 		
 
